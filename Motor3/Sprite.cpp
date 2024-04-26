@@ -40,8 +40,8 @@ void Sprite::init(float x, float y, int width, int height)
 		vertexData[i].setColor(255, 0, 255, 255);
 	}
 
-	vertexData[0].setColor(0, 255, 0, 255);
-	vertexData[2].setColor(255, 0, 0, 255);
+	//vertexData[0].setColor(0, 255, 0, 255);
+	//vertexData[2].setColor(255, 0, 0, 255);
 
 	// Enlazamos nuestro buffer al contexto definiendo el tipo
 	glBindBuffer(GL_ARRAY_BUFFER, vboID);
