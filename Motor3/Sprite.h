@@ -12,5 +12,4 @@ public:
 	~Sprite();
 	void init(float x, float y, int width, int height);
 	void draw();
-	void setPosition();
 };

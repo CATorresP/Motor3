@@ -59,7 +59,7 @@ int MainGame::init()
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	// Profundidad establecido tras borrado del buffer
 	glClearDepth(1.0);
-	// Iniciarlizar shaders
+	// Inicializar shaders
 	initShaders();
 }
 

@@ -37,11 +37,11 @@ void Sprite::init(float x, float y, int width, int height)
 
 	for (size_t i = 0; i < 6; i++)
 	{
-		vertexData[i].setColor(255, 0, 0, 255);
+		vertexData[i].setColor(255, 0, 255, 255);
 	}
 
-	vertexData[1].setColor(0, 255, 0, 255);
-	vertexData[4].setColor( 0,0, 255, 255);
+	vertexData[0].setColor(0, 255, 0, 255);
+	vertexData[2].setColor(255, 0, 0, 255);
 
 	// Enlazamos nuestro buffer al contexto definiendo el tipo
 	glBindBuffer(GL_ARRAY_BUFFER, vboID);
@@ -56,8 +56,6 @@ void Sprite::init(float x, float y, int width, int height)
 void Sprite::draw()
 {
 	glBindBuffer(GL_ARRAY_BUFFER, vboID);
-	// habilitamos
-		
 	glVertexAttribPointer(
 		0,
 		2,
@@ -78,9 +76,4 @@ void Sprite::draw()
 
 	glDisableVertexAttribArray(0);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
-}
-
-void Sprite::setPosition()
-{
-
 }
